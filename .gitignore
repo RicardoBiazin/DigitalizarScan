@@ -1,0 +1,33 @@
+# Ambiente e saidas de build
+.venv/
+build/
+dist/
+__pycache__/
+*.pyc
+*.egg-info/
+
+# Tesseract embutido no pacote: binario de terceiros, baixado por ferramentas/baixar_tesseract.ps1
+tesseract/
+
+# Logs e temporarios
+*.log
+.dscan-*
+tests/saida/
+
+# Segredos e configuracao local
+.env
+.env.*
+*.pfx
+*.pem
+*.key
+secrets*
+.claude/settings.local.json
+
+# Digitalizacoes reais NUNCA entram no repositorio. Os icones do programa sao liberados abaixo.
+*.pdf
+*.jpg
+*.jpeg
+*.png
+*.tif
+*.tiff
+!digitalizarscan/recursos/*.png
